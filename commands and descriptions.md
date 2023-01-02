@@ -339,18 +339,10 @@ nmap 10.70.72.71 # вывел Host is up
 nmap -sT 10.70.72.71 # вывел Host is up
 
 
-
-
-
-
-
-
-
-
 ## Part 5. Статическая маршрутизация сети
 
 Сеть:
-![part5_network](part5_network.png)
+![part5_network](https://raw.githubusercontent.com/yulia-star/linux_project2/main/part5_network.png)
 
 Поднять пять виртуальных машин (3 рабочие станции (ws11, ws21, ws22) и 2 роутера (r1, r2))
 ### 5.1. Настройка адресов машин
