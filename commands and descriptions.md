@@ -349,7 +349,13 @@ nmap -sT 10.70.72.71 # вывел Host is up
 Настроить конфигурации машин в etc/netplan/00-installer-config.yaml согласно сети на рисунке.
 В отчёт поместить скрины с содержанием файла etc/netplan/00-installer-config.yaml для каждой машины.
 Перезапустить сервис сети. Если ошибок нет, то командой ip -4 a проверить, что адрес машины задан верно. Также пропинговать ws22 с ws21. Аналогично пропинговать r1 с ws11.
-В отчёт поместить скрины с вызовом и выводом использованных команд.
+
+![ws11](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws11.png)
+![ws21](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws21.png)
+![ws22](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws22.png)
+![r1](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r1.png)
+![r2](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r2.png)
+
 ### 5.2. Включение переадресации IP-адресов.
 Для включения переадресации IP, выполните команду на роутерах:
 sysctl -w net.ipv4.ip_forward=1 При таком подходе переадресация не будет работать после перезагрузки системы.
