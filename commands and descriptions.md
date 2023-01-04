@@ -350,19 +350,13 @@ nmap -sT 10.70.72.71 # вывел Host is up
 В отчёт поместить скрины с содержанием файла etc/netplan/00-installer-config.yaml для каждой машины.
 Перезапустить сервис сети. Если ошибок нет, то командой ip -4 a проверить, что адрес машины задан верно. Также пропинговать ws22 с ws21. Аналогично пропинговать r1 с ws11.
 
-![ws11](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws11.png)
-![ws21](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws21.png)
-![ws22](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws22.png)
-![r1](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r1.png)
-![r2](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r2.png)
-
 ### 5.2. Включение переадресации IP-адресов.
 Для включения переадресации IP, выполните команду на роутерах:
-sysctl -w net.ipv4.ip_forward=1 При таком подходе переадресация не будет работать после перезагрузки системы.
+```sysctl -w net.ipv4.ip_forward=1``` При таком подходе переадресация не будет работать после перезагрузки системы.
 
 В отчёт поместить скрин с вызовом и выводом использованной команды.
-Откройте файл /etc/sysctl.conf и добавьте в него следующую строку:
-net.ipv4.ip_forward = 1 При использовании этого подхода, IP-переадресация включена на постоянной основе.
+Откройте файл ```/etc/sysctl.conf``` и добавьте в него следующую строку:
+```net.ipv4.ip_forward = 1``` При использовании этого подхода, IP-переадресация включена на постоянной основе.
 
 В отчёт поместить скрин с содержанием изменённого файла /etc/sysctl.conf.
 ### 5.3. Установка маршрута по-умолчанию
@@ -378,13 +372,25 @@ default via 10.10.0.1 dev eth0
 tcpdump -tn -i eth1
 
 В отчёт поместить скрин с вызовом и выводом использованных команд.
+
+![ws11](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws11.png)
+![ws21](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws21.png)
+![ws22](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws22.png)
+![r1](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r1.png)
+![r2](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r2.png)
+
+
+![part5_network](https://raw.githubusercontent.com/yulia-star/linux_project2/main/part5_network.png)
+
 ### 5.4. Добавление статических маршрутов
 Добавить в роутеры r1 и r2 статические маршруты в файле конфигураций. Пример для r1 маршрута в сетку 10.20.0.0/26:
 __Добавить в конец описания сетевого интерфейса eth1:__
 - to: 10.20.0.0
   via: 10.100.0.12
 В отчёт поместить скрины с содержанием изменённого файла etc/netplan/00-installer-config.yaml для каждого роутера.
-Вызвать ip r и показать таблицы с маршрутами на обоих роутерах. Пример таблицы на r1:
+Вызвать ip r и показать таблицы с маршрутами на обоих роутерах.
+
+Пример таблицы на r1:
 10.100.0.0/16 dev eth1 proto kernel scope link src 10.100.0.11
 10.20.0.0/26 via 10.100.0.12 dev eth1
 10.10.0.0/18 dev eth0 proto kernel scope link src 10.10.0.1
