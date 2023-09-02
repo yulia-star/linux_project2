@@ -448,6 +448,7 @@ ws1 - iptables
 ![](https://github.com/yulia-star/linux_project2/blob/main/ws1-iptables.png)
 
 ws2 - iptables
+
 ![](https://github.com/yulia-star/linux_project2/blob/main/ws2-ipt.png)
 ![](https://github.com/yulia-star/linux_project2/blob/main/ws2-iptables.png)
 
@@ -462,9 +463,9 @@ ws2 - iptables
 Сохранить дампы образов виртуальных машин
 p.s. Ни в коем случае не сохранять дампы в гит!
 
-ping 10.70.72.71 # не пингуется
-nmap 10.70.72.71 # вывел Host is up
-nmap -sT 10.70.72.71 # вывел Host is up
+nmap не был скачан пришлось сначала удалять команды из iptables (iptables -F), скачивать, а потом уже заново их устанавливать и тестировать nmap
+
+![](https://github.com/yulia-star/linux_project2/blob/main/nmap.png)
 
 
 ## Part 5. Статическая маршрутизация сети
