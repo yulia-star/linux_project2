@@ -443,11 +443,13 @@ w2:
 Все делается либо через root, либо с sudo
 
 ws1 - iptables
+
 ![](https://github.com/yulia-star/linux_project2/blob/main/ws1-ipt.png)
-![]()
+![](https://github.com/yulia-star/linux_project2/blob/main/ws1-iptables.png)
 
-
-
+ws2 - iptables
+![](https://github.com/yulia-star/linux_project2/blob/main/ws2-ipt.png)
+![](https://github.com/yulia-star/linux_project2/blob/main/ws2-iptables.png)
 
 
 
