@@ -518,12 +518,6 @@ tcpdump -tn -i eth1
 
 В отчёт поместить скрин с вызовом и выводом использованных команд.
 
-![ws11](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws11.png)
-![ws21](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws21.png)
-![ws22](https://raw.githubusercontent.com/yulia-star/linux_project2/main/ws22.png)
-![r1](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r1.png)
-![r2](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r2.png)
-
 
 ![part5_network](https://raw.githubusercontent.com/yulia-star/linux_project2/main/part5_network.png)
 
