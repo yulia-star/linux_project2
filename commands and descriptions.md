@@ -511,12 +511,20 @@ default via 10.10.0.1 dev eth0
 10.10.0.0/18 dev eth0 proto kernel scope link src 10.10.0.2
 Настроить маршрут по-умолчанию (шлюз) для рабочих станций. Для этого добавить gateway4 [ip роутера] в файле конфигураций
 В отчёт поместить скрин с содержанием файла etc/netplan/00-installer-config.yaml.
-Вызвать ip r и показать, что добавился маршрут в таблицу маршрутизации
+
+![](https://github.com/yulia-star/linux_project2/blob/main/gateway.png)
+
+Вызвать ip r и показать, что добавился маршрут в таблицу маршрутизации.
 В отчёт поместить скрин с вызовом и выводом использованной команды.
+
+![](https://github.com/yulia-star/linux_project2/blob/main/ip%20r.png)
+
 Пропинговать с ws11 роутер r2 и показать на r2, что пинг доходит. Для этого использовать команду:
 tcpdump -tn -i eth1
 
 В отчёт поместить скрин с вызовом и выводом использованных команд.
+
+![](https://github.com/yulia-star/linux_project2/blob/main/ping%20ws11%20-%20r2.png)
 
 
 ![part5_network](https://raw.githubusercontent.com/yulia-star/linux_project2/main/part5_network.png)
