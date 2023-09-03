@@ -500,6 +500,10 @@ ping
 ```net.ipv4.ip_forward = 1``` При использовании этого подхода, IP-переадресация включена на постоянной основе.
 
 В отчёт поместить скрин с содержанием изменённого файла /etc/sysctl.conf.
+
+![](https://github.com/yulia-star/linux_project2/blob/main/forward_cmd.png)
+![](https://github.com/yulia-star/linux_project2/blob/main/forward_file.png)
+
 ### 5.3. Установка маршрута по-умолчанию
 Пример вывода команды ip r после добавления шлюза:
 
