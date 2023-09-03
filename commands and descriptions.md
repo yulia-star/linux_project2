@@ -535,8 +535,6 @@ __Добавить в конец описания сетевого интерф�
 В отчёт поместить скрины с содержанием изменённого файла etc/netplan/00-installer-config.yaml для каждого роутера.
 Вызвать ip r и показать таблицы с маршрутами на обоих роутерах.
 
-![r1_route](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r1_route.png)
-![r2_route](https://raw.githubusercontent.com/yulia-star/linux_project2/main/r2_route.png)
 
 Пример таблицы на r1:
 10.100.0.0/16 dev eth1 proto kernel scope link src 10.100.0.11
